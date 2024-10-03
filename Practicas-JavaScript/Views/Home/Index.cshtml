@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<script>
+    /*ACT 1*/
+    let Persona = {
+        Nombre: "Ilan",
+        Apellido: "Tauscher",
+        Edad: 17,
+        Estudia: true,
+        Hobbies: ["Gaming", "Anime", "Series"]
+    };
+    console.log("Información de la Persona:");
+    console.log("Nombre: " + Persona.Nombre);
+    console.log("Apellido: " + Persona.Apellido);
+    console.log("Edad: " + Persona.Edad);
+    console.log("Estudia: " + (Persona.Estudia ? "Sí" : "No"));
+    console.log("Hobbies: " + Persona.Hobbies.join(", "));
+
+    /*ACT 2*/
+    let cuentas = [
+        { nombre: "Juan Pérez", cbu: "1234567890", saldo: 15000 },
+        { nombre: "María Gómez", cbu: "0987654321", saldo: 9000 },
+        { nombre: "Carlos Díaz", cbu: "111122223333", saldo: 20000 }
+    ];
+
+</script>
