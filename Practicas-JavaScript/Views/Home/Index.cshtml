@@ -30,4 +30,33 @@
         { nombre: "Carlos Díaz", cbu: "111122223333", saldo: 20000 }
     ];
 
+    let totalSaldos = cuentas.reduce((acumulador, cuentas) => acumulador + cuentas.saldo, 0);
+    let promedioSaldo = totalSaldos / cuentas.length;
+    console.log(`El promedio de los saldos es: $${promedioSaldo}`);
+
+    let cuentasConMasDe10000 = cuentas.filter(cuentas => cuentas.saldo > 10000);
+    let cbusConMasDe10000 = cuentasConMasDe10000.map(cuentas => cuentas.cbu);
+    console.log("CBUs de cuentas con saldo mayor a $10,000:", cbusConMasDe10000);
+
+    function mostrarDatosPorCBU(cbu) {
+        let cuentaEncontrada = cuentas.find(cuentas => cuentas.cbu === cbu);
+        if (cuentaEncontrada) {
+            console.log("Datos de la cuenta encontrada:", cuentaEncontrada);
+        } else {
+            console.log("No se encontró ninguna cuenta con ese CBU.");
+        }
+    
+    function eliminarCuentaPorCBU(cbu) {
+        let indice = cuentas.findIndex(cuenta => cuenta.cbu === cbu);
+        if (indice !== -1) {
+            cuentas.splice(indice, 1);
+            console.log(`Cuenta con CBU ${cbu} eliminada.`);
+        } else {
+            console.log("No se encontró ninguna cuenta con ese CBU para eliminar.");
+        }
+    }
+    
+    mostrarDatosPorCBU("1234567890");
+    eliminarCuentaPorCBU("0987654321");
+}
 </script>

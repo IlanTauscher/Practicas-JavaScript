@@ -28,3 +28,4 @@ C:\Users\Usuario\Desktop\Otros\Info\Practicas-JavaScript\Practicas-JavaScript\ob
 C:\Users\Usuario\Desktop\Otros\Info\Practicas-JavaScript\Practicas-JavaScript\obj\Debug\net8.0\Practicas-JavaScript.pdb
 C:\Users\Usuario\Desktop\Otros\Info\Practicas-JavaScript\Practicas-JavaScript\obj\Debug\net8.0\Practicas-JavaScript.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\Otros\Info\Practicas-JavaScript\Practicas-JavaScript\obj\Debug\net8.0\ref\Practicas-JavaScript.dll
+C:\Users\Usuario\Desktop\Otros\Info\Practicas-JavaScript\Practicas-JavaScript\obj\Debug\net8.0\Practicas-JavaScript.sourcelink.json
